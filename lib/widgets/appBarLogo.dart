@@ -1,4 +1,3 @@
-import 'package:fluid_tracker_site/shared/app_colors.dart';
 import 'package:fluid_tracker_site/widgets/appBarLogo_mobile.dart';
 import 'package:fluid_tracker_site/widgets/appBarLogo_tablet_desktop.dart';
 import 'package:flutter/material.dart';
