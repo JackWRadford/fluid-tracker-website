@@ -19,7 +19,9 @@ class FeatureItem extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.all(mediumPadding),
       padding: const EdgeInsets.all(0),
-      width: 400,
+      constraints: BoxConstraints(
+        maxWidth: 300,
+      ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.start,

@@ -1,4 +1,3 @@
-import 'package:fluid_tracker_site/shared/app_colors.dart';
 import 'package:fluid_tracker_site/shared/app_text_styles.dart';
 import 'package:fluid_tracker_site/shared/ui_helpers.dart';
 import 'package:fluid_tracker_site/widgets/textLink.dart';
@@ -10,7 +9,6 @@ class MyFooter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: mainBlue,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -31,7 +29,7 @@ class MyFooter extends StatelessWidget {
                 '© 2021 Jack Radford. All Rights Reserved',
                 style: textTinyStyle,
               ),
-              UIHelper.verticalSpaceMedium(),
+              UIHelper.verticalSpaceLarge(),
             ],
           ),
         ],
