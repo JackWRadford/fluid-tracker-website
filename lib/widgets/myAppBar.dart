@@ -1,4 +1,4 @@
-import 'package:fluid_tracker_site/myRoutes.dart';
+import 'package:fluid_tracker_site/routing/myRoutes.dart';
 import 'package:fluid_tracker_site/shared/ui_helpers.dart';
 import 'package:fluid_tracker_site/shared/ui_size_value.dart';
 import 'package:fluid_tracker_site/widgets/appBarLogo.dart';
@@ -11,7 +11,7 @@ class MyAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 75,
+      height: 55,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -32,20 +32,13 @@ class MyAppBar extends StatelessWidget {
                     //links
                     TextLink(
                       label: 'About',
-                      onpress: () {
-                        Navigator.pushNamed(
-                          context,
-                          aboutRoute,
-                        );
-                      },
+                      navPath: aboutRoute,
                     ),
 
                     UIHelper.horizontalSpaceMedium(),
                     TextLink(
                       label: 'Contact',
-                      onpress: () {
-                        print(Uri.base);
-                      },
+                      navPath: contactRoute,
                     ),
                   ],
                 )

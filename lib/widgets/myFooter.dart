@@ -1,3 +1,4 @@
+import 'package:fluid_tracker_site/routing/myRoutes.dart';
 import 'package:fluid_tracker_site/shared/app_text_styles.dart';
 import 'package:fluid_tracker_site/shared/ui_helpers.dart';
 import 'package:fluid_tracker_site/widgets/textLink.dart';
@@ -19,9 +20,15 @@ class MyFooter extends StatelessWidget {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  TextLink(label: 'Privacy Policy', onpress: () {}),
+                  TextLink(
+                    label: 'Privacy Policy',
+                    navPath: privacyRoute,
+                  ),
                   UIHelper.horizontalSpaceMedium(),
-                  TextLink(label: 'Terms of Use', onpress: () {}),
+                  TextLink(
+                    label: 'Terms of Use',
+                    navPath: termsRoute,
+                  ),
                 ],
               ),
               UIHelper.verticalSpaceMedium(),

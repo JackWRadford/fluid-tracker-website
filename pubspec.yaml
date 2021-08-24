@@ -31,6 +31,7 @@ dependencies:
   url_launcher: ^6.0.9 #open external urls
   responsive_builder: ^0.4.1 #responsive UI
   responsive_grid: ^2.0.0 #bootstrap style responsive grid
+  get_it: ^7.2.0 #service locator
 
 dev_dependencies:
   flutter_test:

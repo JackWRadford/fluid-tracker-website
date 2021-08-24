@@ -1,10 +1,10 @@
-import 'package:fluid_tracker_site/myRoutes.dart';
+import 'package:fluid_tracker_site/locator.dart';
 import 'package:fluid_tracker_site/shared/app_colors.dart';
-import 'package:fluid_tracker_site/views/aboutView.dart';
-import 'package:fluid_tracker_site/views/homeView.dart';
+import 'package:fluid_tracker_site/views/layout_template.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  setupLocator();
   runApp(MyApp());
 }
 
@@ -16,11 +16,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Fluidify - Water Tracker and Reminder',
       theme: darkTheme,
-      routes: {
-        homeRoute: (context) => HomeView(),
-        aboutRoute: (context) => AboutView(),
-      },
-      initialRoute: homeRoute,
       //stop native os from scaling text
       builder: (BuildContext context, Widget? child) {
         return MediaQuery(
@@ -30,6 +25,7 @@ class MyApp extends StatelessWidget {
           child: child!,
         );
       },
+      home: LayoutTemplate(),
     );
   }
 }
