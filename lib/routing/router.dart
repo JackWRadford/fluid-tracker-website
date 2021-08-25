@@ -1,14 +1,17 @@
 import 'package:fluid_tracker_site/routing/myRoutes.dart';
-import 'package:fluid_tracker_site/views/aboutView.dart';
 import 'package:fluid_tracker_site/views/homeView.dart';
+import 'package:fluid_tracker_site/views/privacyView.dart';
+import 'package:fluid_tracker_site/views/termsView.dart';
 import 'package:flutter/material.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case homeRoute:
       return _getPageRoute(HomeView(), settings);
-    case aboutRoute:
-      return _getPageRoute(AboutView(), settings);
+    case privacyRoute:
+      return _getPageRoute(PrivacyView(), settings);
+    case termsRoute:
+      return _getPageRoute(TermsView(), settings);
     default:
       return _getPageRoute(HomeView(), settings);
   }
@@ -28,6 +31,7 @@ class _FadeRoute extends PageRouteBuilder {
     required this.child,
     required this.routeName,
   }) : super(
+          transitionDuration: Duration(microseconds: 0),
           settings: RouteSettings(name: routeName),
           pageBuilder: (
             BuildContext context,

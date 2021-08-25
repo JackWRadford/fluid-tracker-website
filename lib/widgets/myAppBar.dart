@@ -1,8 +1,5 @@
-import 'package:fluid_tracker_site/routing/myRoutes.dart';
-import 'package:fluid_tracker_site/shared/ui_helpers.dart';
 import 'package:fluid_tracker_site/shared/ui_size_value.dart';
 import 'package:fluid_tracker_site/widgets/appBarLogo.dart';
-import 'package:fluid_tracker_site/widgets/textLink.dart';
 import 'package:flutter/material.dart';
 
 class MyAppBar extends StatelessWidget {
@@ -25,23 +22,23 @@ class MyAppBar extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 AppBarLogo(),
-                Row(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    //links
-                    TextLink(
-                      label: 'About',
-                      navPath: aboutRoute,
-                    ),
+                // Row(
+                //   mainAxisSize: MainAxisSize.min,
+                //   mainAxisAlignment: MainAxisAlignment.start,
+                //   children: [
+                //     //links
+                //     TextLink(
+                //       label: 'Privacy',
+                //       navPath: privacyRoute,
+                //     ),
 
-                    UIHelper.horizontalSpaceMedium(),
-                    TextLink(
-                      label: 'Contact',
-                      navPath: contactRoute,
-                    ),
-                  ],
-                )
+                //     UIHelper.horizontalSpaceMedium(),
+                //     TextLink(
+                //       label: 'Terms',
+                //       navPath: termsRoute,
+                //     ),
+                //   ],
+                // )
               ],
             ),
           ),
