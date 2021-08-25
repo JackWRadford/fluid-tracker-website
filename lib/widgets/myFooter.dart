@@ -26,7 +26,7 @@ class MyFooter extends StatelessWidget {
                   ),
                   UIHelper.horizontalSpaceMedium(),
                   TextLink(
-                    label: 'Terms of Use',
+                    label: 'Terms & Conditions',
                     navPath: termsRoute,
                   ),
                 ],
