@@ -32,7 +32,7 @@ class AppDescText extends StatelessWidget {
             UIHelper.verticalSpaceMedium(),
             ImageLink(
               url: 'https://apps.apple.com/gb/app/fluidify/id1574540383',
-              imagePath: 'appStoreBtn.png',
+              imagePath: 'assets/appStoreBtn.png',
             ),
           ],
         ),

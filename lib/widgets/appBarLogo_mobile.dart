@@ -8,7 +8,7 @@ class AppBarLogoMobile extends StatelessWidget {
     return SizedBox(
       width: 40,
       child: Image.asset(
-        'appIcon.png',
+        'assets/appIcon.png',
       ),
     );
   }

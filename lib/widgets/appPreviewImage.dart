@@ -6,7 +6,7 @@ class AppPreviewImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      'preview.png',
+      'assets/preview.png',
       scale: 1.1,
     );
   }

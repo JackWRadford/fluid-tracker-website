@@ -16,7 +16,7 @@ class AppBarLogoTabletDesktop extends StatelessWidget {
         SizedBox(
           width: 40,
           child: Image.asset(
-            'appIcon.png',
+            'assets/appIcon.png',
           ),
         ),
         UIHelper.horizontalSpaceSmall(),

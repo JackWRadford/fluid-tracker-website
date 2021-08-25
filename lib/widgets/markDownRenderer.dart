@@ -17,7 +17,7 @@ class MarkDownRenderer extends StatelessWidget {
       child: FutureBuilder(
         future: Future.delayed(Duration(milliseconds: 150)).then(
           (value) {
-            return rootBundle.loadString(fileName);
+            return rootBundle.loadString('assets/$fileName');
           },
         ),
         builder: (context, snapshot) {
