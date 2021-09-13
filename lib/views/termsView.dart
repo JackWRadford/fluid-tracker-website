@@ -1,4 +1,5 @@
 import 'package:fluid_tracker_site/widgets/markDownRenderer.dart';
+import 'package:fluid_tracker_site/widgets/myAppBar.dart';
 import 'package:flutter/material.dart';
 
 class TermsView extends StatelessWidget {
@@ -6,6 +7,11 @@ class TermsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MarkDownRenderer(fileName: 'terms.md');
+    return Column(
+      children: [
+        MyAppBar(),
+        Flexible(child: MarkDownRenderer(fileName: 'terms.md')),
+      ],
+    );
   }
 }

@@ -1,4 +1,6 @@
+import 'package:fluid_tracker_site/shared/ui_helpers.dart';
 import 'package:fluid_tracker_site/widgets/markDownRenderer.dart';
+import 'package:fluid_tracker_site/widgets/myAppBar.dart';
 import 'package:flutter/material.dart';
 
 class PrivacyView extends StatelessWidget {
@@ -6,6 +8,11 @@ class PrivacyView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MarkDownRenderer(fileName: 'privacy.md');
+    return Column(
+      children: [
+        MyAppBar(),
+        Flexible(child: MarkDownRenderer(fileName: 'privacy.md')),
+      ],
+    );
   }
 }
