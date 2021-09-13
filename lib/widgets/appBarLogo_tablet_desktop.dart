@@ -1,4 +1,3 @@
-import 'package:fluid_tracker_site/shared/app_colors.dart';
 import 'package:fluid_tracker_site/shared/app_text_styles.dart';
 import 'package:fluid_tracker_site/shared/ui_helpers.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +22,7 @@ class AppBarLogoTabletDesktop extends StatelessWidget {
         //app title
         Text(
           'Fluidify',
-          style: textLargeStyle.copyWith(color: mainBlue),
+          style: textLargeStyle,
           textAlign: TextAlign.start,
         ),
       ],

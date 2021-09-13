@@ -8,7 +8,7 @@ class MyAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 55,
+      height: 80,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -22,23 +22,6 @@ class MyAppBar extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 AppBarLogo(),
-                // Row(
-                //   mainAxisSize: MainAxisSize.min,
-                //   mainAxisAlignment: MainAxisAlignment.start,
-                //   children: [
-                //     //links
-                //     TextLink(
-                //       label: 'Privacy',
-                //       navPath: privacyRoute,
-                //     ),
-
-                //     UIHelper.horizontalSpaceMedium(),
-                //     TextLink(
-                //       label: 'Terms',
-                //       navPath: termsRoute,
-                //     ),
-                //   ],
-                // )
               ],
             ),
           ),

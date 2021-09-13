@@ -1,4 +1,3 @@
-import 'package:fluid_tracker_site/widgets/myAppBar.dart';
 import 'package:flutter/material.dart';
 
 class LayoutTemplate extends StatelessWidget {
@@ -16,7 +15,6 @@ class LayoutTemplate extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
-          MyAppBar(),
           //main content
           Flexible(
             child: child,

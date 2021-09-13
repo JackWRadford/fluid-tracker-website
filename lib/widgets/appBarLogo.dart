@@ -1,7 +1,6 @@
 import 'package:fluid_tracker_site/locator.dart';
 import 'package:fluid_tracker_site/routing/myRoutes.dart';
 import 'package:fluid_tracker_site/services/nav_service.dart';
-import 'package:fluid_tracker_site/widgets/appBarLogo_mobile.dart';
 import 'package:fluid_tracker_site/widgets/appBarLogo_tablet_desktop.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -17,7 +16,7 @@ class AppBarLogo extends StatelessWidget {
         locator<NavService>().navigateTo(homeRoute);
       },
       child: ScreenTypeLayout(
-        mobile: AppBarLogoMobile(),
+        mobile: AppBarLogoTabletDesktop(),
         tablet: AppBarLogoTabletDesktop(),
         desktop: AppBarLogoTabletDesktop(),
       ),
