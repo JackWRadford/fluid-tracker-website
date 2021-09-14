@@ -4,10 +4,12 @@ import 'package:url_launcher/url_launcher.dart';
 class ImageLink extends StatelessWidget {
   final String url;
   final String imagePath;
+  final double imageScale;
   ImageLink({
     Key? key,
     required this.url,
     required this.imagePath,
+    required this.imageScale,
   }) : super(key: key);
 
   @override
@@ -22,7 +24,10 @@ class ImageLink extends StatelessWidget {
           throw "Could not launch $url";
         }
       },
-      child: Image.asset(imagePath),
+      child: Image.asset(
+        imagePath,
+        scale: imageScale,
+      ),
     );
   }
 }

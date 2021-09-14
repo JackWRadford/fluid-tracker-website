@@ -30,9 +30,21 @@ class AppDescText extends StatelessWidget {
               textAlign: TextAlign.start,
             ),
             UIHelper.verticalSpaceMedium(),
-            ImageLink(
-              url: 'https://apps.apple.com/gb/app/fluidify/id1574540383',
-              imagePath: 'assets/appStoreBtn.png',
+            Row(
+              children: [
+                ImageLink(
+                  url: 'https://apps.apple.com/gb/app/fluidify/id1574540383',
+                  imagePath: 'assets/appStoreBtn.png',
+                  imageScale: 0.9,
+                ),
+                UIHelper.horizontalSpaceSmall(),
+                ImageLink(
+                  url:
+                      'https://play.google.com/store/apps/details?id=com.jackwradford.fluidtracker',
+                  imagePath: 'assets/googlePlayBadge.png',
+                  imageScale: 3.9,
+                ),
+              ],
             ),
           ],
         ),
