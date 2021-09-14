@@ -33,6 +33,7 @@ dependencies:
   responsive_grid: ^2.0.0 #bootstrap style responsive grid
   get_it: ^7.2.0 #service locator
   flutter_markdown: ^0.6.5 #render markdown (terms and privacy)
+  google_fonts: ^2.1.0 #directly access google fonts
 
 dev_dependencies:
   flutter_test:

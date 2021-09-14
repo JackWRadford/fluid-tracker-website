@@ -1,6 +1,7 @@
 import 'package:fluid_tracker_site/shared/ui_size_value.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 const Color myRed = Color(0xffe74c3c);
 
@@ -40,6 +41,7 @@ final Color lightCircBG = Color(0xffededed);
 //themes
 
 final darkTheme = ThemeData(
+  fontFamily: GoogleFonts.montserrat().fontFamily,
   canvasColor: darkBG,
   primarySwatch: Colors.grey,
   primaryColor: Colors.black,
@@ -70,6 +72,7 @@ final darkTheme = ThemeData(
 );
 
 final lightTheme = ThemeData(
+  fontFamily: GoogleFonts.montserrat().fontFamily,
   canvasColor: lightBG,
   primarySwatch: Colors.grey,
   primaryColor: Colors.white,
